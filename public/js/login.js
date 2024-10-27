@@ -1,8 +1,8 @@
 import {showErrorAlert, showSuccessAlert} from './utils/alert.js';
 import {apiRequest} from "./utils/api.js";
 
-const remoteApiURL = import.meta.env.VITE_REMOTE_API_URL;
-const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
+const remoteApiURL = process.env.REMOTE_API_URL;
+const adminEmail = process.env.ADMIN_EMAIL;
 
 const headers = {
     'Content-Type': 'application/json',
