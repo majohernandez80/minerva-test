@@ -1,6 +1,6 @@
 import {showErrorAlert, showSuccessAlert, showWarningAlert} from './utils/alert.js';
 
-const remoteApiURL = process.env.REMOTE_API_URL;
+const remoteApiURL = import.meta.env.VITE_REMOTE_API_URL;
 
 const headers = {
     'Content-Type': 'application/json',
